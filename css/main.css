@@ -55,6 +55,7 @@
 /*-----------------wrapper and body---------------*/
 body{
     background-image: url("../images/wood.jpg");
+    background-attachment: fixed;
     width:100%;
 }
 #wrapper{
@@ -96,7 +97,7 @@ body{
     list-style: none;
 }
 .comps{
-    padding-bottom: 1%;
+    padding: 2% 0 1% 0;
     width: 100%;
     background-color: white;
     margin-bottom: 3%;
@@ -104,13 +105,34 @@ body{
 .comps p{
     font-family: Rubik, sans-serif;
 }
+.comps h1{
+    width: 100%;
+    text-align: center;
+    font-family: Rubik, sans-serif;
+    font-weight: bold;
+    font-size: 2.2em;
+    margin: 0% auto;
+}
 .comps h4{
+    font-size: 1.5em;
+    font-weight: bold;
     font-family: "Poiret One", sans-serif;
+}
+.comps li{
+    padding: 0 1em 0 1em;
+}
+.comps li:nth-child(2){
+    border-left: solid .1em black;
+    border-right: solid .1em black;
 }
 .comps img{
     display: block;
     width: 90%;
     margin: 2% auto;
+}
+.comps img:hover{
+    border: solid .3em red;
+    cursor: pointer;
 }
 .comp-button{
     display: block;
