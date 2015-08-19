@@ -1,0 +1,24 @@
+#team{
+    margin: 3em auto;
+    width: 100%;
+    text-align: center;
+    background-image: url("images/legion.jpg");
+    padding: 5% 0 8% 0;
+    color: white;
+}
+
+#team ul{
+    list-style: none;
+    display: inline-block;
+    margin: 0 auto;
+    width: 80%;
+}
+#team ul li{
+    border: solid black .1em;
+    float: left;
+    width: 20%;
+    margin: 1%;
+}
+#team ul li img{
+    width: 100%;
+}

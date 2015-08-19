@@ -1,0 +1,57 @@
+#grocery{
+    width: 70%;
+    margin: 3em auto;
+}
+#grocery ul{
+    width: 100%;
+    list-style: none;
+    margin: 0 auto;
+}
+#grocery .firstItems a:link{
+    color: white;
+
+}
+#grocery .firstItems a:visited{
+    color: white;
+}
+#first li{
+    float: left;
+    width: 20%;
+    margin: 1%;
+
+    border: solid black .1em;
+}
+#first h2{
+    width: 50%;
+    margin: 2% 0 0 10%;
+}
+#second h2{
+    width: 40%;
+    margin: 2% 0 0 10%;
+}
+#first p, #second p {
+    width: 50%;
+    margin: 2% 0 0 10%;
+}
+#first div{
+    background-color: green;
+}
+
+
+
+.mainPic{
+    width: 100%;
+}
+.search{
+    display: none;
+    width: 10%;
+}
+#second{
+    margin-top: 10%;
+}
+#second li{
+    margin: 1%;
+    float: left;
+    width: 30%;
+    border: solid black .1em;
+}
