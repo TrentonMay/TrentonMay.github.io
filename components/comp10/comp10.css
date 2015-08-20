@@ -1,0 +1,50 @@
+#whatDo{
+    color: white;
+    width: 100%;
+    margin: 0 auto;
+    background-image: url("images/background.png");
+    opacity: 90;
+}
+#whatDo header{
+    margin: 3% auto;
+    padding-top: 6%;
+}
+#whatDo header h1{
+    text-align: center;
+}
+#whatDo article{
+    float: left;
+    width: 13.6%;
+    margin-right: 15%;
+}
+#whatDo article h3{
+    font-size: .8em;
+    text-align: center;
+}
+#whatDo article p{
+    font-size: .5em;
+    text-align: center;
+}
+#whatDo article button{
+    display: block;
+    border: none;
+    background-color: #90d7ed;
+    color: white;
+    width: 60%;
+    padding: 7%;
+    margin: 10% auto;
+    font-size: .8em;
+    text-align: center;
+}
+#whatDo #info #lastArticle{
+    margin-right: 0;
+}
+#whatDo article img{
+    width: 100%;
+}
+#whatDo #info{
+    display: table;
+    width: 60%;
+    margin: 0 auto;
+    padding-bottom: 6%;
+}

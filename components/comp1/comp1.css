@@ -1,24 +1,34 @@
 #searchCrit{
     width: 100%;
     margin: 3em auto;
+    display: inline-block;
 }
 #searchCrit ul{
+    display: table;
+    width: 70%;
+    margin: 0 auto;
     list-style: none;
 }
 #searchCrit li{
-    border: solid black .1em;
     margin: 2%;
-    width: 25%;
+    width: 29.2%;
     float: left;
+}
+#searchCrit li:first-child{
+    margin-left: 0;
 }
 #searchCrit img{
     width: 100%;
     height: 100%;
-    margin: 0 auto;
-    display: inline-block;
+    margin: 0 auto ;
+    display: block;
 }
 #searchCrit li div{
-    background-color: black;
+    margin-top: 0 ;
+    background-color: #343434;
+}
+#searchCrit li a{
+    width: 100%;
 }
 #searchCrit li a:link{
     color: white;
@@ -32,14 +42,10 @@
     font-family: sans-serif;
     width: 50%;
 }
-#searchCrit li a button{
-    display: inline-block;
-    margin-left: 10%;
-    font-size: 1.5em;
-    text-align: center;
-    padding:3%;
-    border-radius: 100%;
-    border: none;
-    color: white;
-    background-color: lawngreen;
+#searchCrit li a img{
+    float: right;
+    width: 15%;
+    position: relative;
+    right: 10%;
+    margin-top: 10%;
 }

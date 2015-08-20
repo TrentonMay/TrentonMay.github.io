@@ -11,14 +11,19 @@
     list-style: none;
     display: inline-block;
     margin: 0 auto;
-    width: 80%;
+    width: 70%;
 }
 #team ul li{
-    border: solid black .1em;
     float: left;
-    width: 20%;
-    margin: 1%;
+    width: 23%;
+    margin-right: 1%;
+}
+#team ul li:last-child{
+    margin: 0;
 }
 #team ul li img{
     width: 100%;
+}
+#team .border{
+    border:solid white .1em;
 }

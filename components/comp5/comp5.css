@@ -1,0 +1,59 @@
+#gallery{
+    width: 100%;
+    margin: 2em auto;
+    background-image: url("images/wheat.jpg");
+
+}
+
+#gallery header{
+    margin: 0 auto;
+    padding-top: .1em;
+    text-align: center;
+    color: white;
+}
+#gallery header h1{
+    margin-bottom: 0;
+    font-size: 2em;
+}
+#gallery header img{
+    width: 15%;
+    margin-top: 0;
+}
+#gallery #carousel{
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+}
+#gallery #carousel img{
+    display: block;
+    border: solid white .8em;
+    margin: 0 auto;
+
+}
+
+#gallery #carousel button{
+    margin: 0 auto;
+    display: block;
+    color: white;
+    background-color: orange;
+    width: 6%;
+    padding: .5em;
+    border: none;
+    font-size: .8em;
+}
+#gallery #carousel span{
+    color: white;
+    font-size: 1.5em;
+}
+#gallery #carousel #left{
+    float: left;
+    position: relative;
+    top: 8em;
+    left: 8em;
+}
+#gallery #carousel #right{
+    float: right;
+    position: relative;
+    top: 8em;
+    right: 8em;
+}

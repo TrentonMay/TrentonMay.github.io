@@ -1,0 +1,62 @@
+#stories{
+    width: 100%;
+
+    margin: 0 auto;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+}
+#stories button{
+    border: none;
+    background-color: red;
+    color: white;
+    margin-left: 5%;
+    position: absolute;
+    left: 1%;
+    bottom: 1em;
+    z-index: 2;
+
+}
+#stories h2{
+    color: white;
+    font-size: 1em;
+    width: 90%;
+    margin: 0 auto;
+    position: absolute;
+    left: 6%;
+    bottom: 2em;
+    z-index: 2;
+}
+#stories article{
+    position: relative;
+    z-index: 0;
+    background-color: #999;
+    float: left;
+}
+#stories #mainStory{
+    width: 40%;
+    clear: both;
+}
+
+#stories #mainStory img{
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+#stories .secondStory{
+    display: inline-block;
+    width: 19.2%;
+    margin-bottom: 1%;
+    margin-left: 2%;
+}
+#stories .secondStory img{
+    opacity: .5;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.secondStory article:nth-child(1){
+
+}
