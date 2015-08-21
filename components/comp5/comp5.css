@@ -1,3 +1,20 @@
+/*---------------Custom Font------------*/
+/* latin-ext */
+@font-face {
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Merriweather Light'), local('Merriweather-Light'), url(http://fonts.gstatic.com/s/merriweather/v8/ZvcMqxEwPfh2qDWBPxn6nrsKtFnhOiVZh9MDlvO1Vys.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Merriweather Light'), local('Merriweather-Light'), url(http://fonts.gstatic.com/s/merriweather/v8/ZvcMqxEwPfh2qDWBPxn6nkZRWJQ0UjzR2Uv6RollX_g.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
 #gallery{
     width: 100%;
     margin: 2em auto;
@@ -12,6 +29,8 @@
     color: white;
 }
 #gallery header h1{
+    font-family: 'Merriweather', serif;
+    letter-spacing: .1em;
     margin-bottom: 0;
     font-size: 2em;
 }
@@ -32,6 +51,7 @@
 }
 
 #gallery #carousel button{
+    font-family: 'Merriweather', serif;
     margin: 0 auto;
     display: block;
     color: white;
@@ -39,7 +59,7 @@
     width: 6%;
     padding: .5em;
     border: none;
-    font-size: .8em;
+    font-size: .7em;
 }
 #gallery #carousel span{
     color: white;

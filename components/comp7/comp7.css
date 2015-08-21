@@ -1,10 +1,25 @@
+/*--------------------Custom Font-----------------*/
+/* latin-ext */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 100;
+    src: local('Roboto Thin'), local('Roboto-Thin'), url(http://fonts.gstatic.com/s/roboto/v15/e7MeVAyvogMqFwwl61PKhBkAz4rYn47Zy2rvigWQf6w.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 100;
+    src: local('Roboto Thin'), local('Roboto-Thin'), url(http://fonts.gstatic.com/s/roboto/v15/2tsd397wLxj96qwHyNIkxHYhjbSpvc47ee6xR_80Hnw.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
 #stories{
-    width: 100%;
-
+    width: 80%;
+    display: table;
     margin: 0 auto;
-    display: inline-block;
     position: relative;
-    z-index: 1;
 }
 #stories button{
     border: none;
@@ -17,7 +32,11 @@
     z-index: 2;
 
 }
+#stories button{
+    font-family: "Roboto", sans-serif;
+}
 #stories h2{
+    font-family: "Roboto", sans-serif;
     color: white;
     font-size: 1em;
     width: 90%;
@@ -31,11 +50,16 @@
     position: relative;
     z-index: 0;
     background-color: #999;
+}
+#secondStory{
+    display: inline-block;
+    width: 55%;
     float: left;
 }
 #stories #mainStory{
-    width: 40%;
-    clear: both;
+    float: left;
+    display: inline-block;
+    width: 45%;
 }
 
 #stories #mainStory img{
@@ -44,19 +68,26 @@
     z-index: 1;
 }
 
-#stories .secondStory{
+#stories #secondStory article{
     display: inline-block;
-    width: 19.2%;
-    margin-bottom: 1%;
-    margin-left: 2%;
+    width: 38.5%;
+    margin-bottom: 4%;
+    margin-left: 6%;
 }
-#stories .secondStory img{
+#stories #secondStory article:nth-child(3){
+    margin-bottom: 0;
+}
+#stories #secondStory article:nth-child(4){
+    margin-bottom: 0;
+}
+#stories #secondStory article img{
     opacity: .5;
     width: 100%;
     position: relative;
     z-index: 1;
 }
-
-.secondStory article:nth-child(1){
-
+#stories #secondStory article img:hover{
+    opacity: 100;
 }
+
+

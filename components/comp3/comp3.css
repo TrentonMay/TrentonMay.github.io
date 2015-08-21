@@ -1,3 +1,20 @@
+/*--------------------Custom Font--------------*/
+/* latin-ext */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans'), url(http://fonts.gstatic.com/s/opensans/v13/u-WUoqrET9fUeobQW7jkRYX0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans'), url(http://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3ZBw1xU1rKptJj_0jans920.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
 #grocery{
     width: 70%;
     margin: 3em auto;
@@ -8,15 +25,24 @@
     list-style: none;
     margin: 0 auto;
 }
-#grocery a{
+#grocery ul li{
+    position: relative;
+    z-index: 0;
+    padding-bottom: 3%;
+}
+#grocery .secondItems a, #grocery .firstItems a {
     text-decoration: none;
 }
-#grocery a:link{
+#grocery .secondItems a:link, #grocery .firstItems a:link{
     color: white;
 }
-#grocery a:visited{
+#grocery .secondItems a:visited, #grocery .firstItems a:visited{
     color: white;
 }
+#grocery h2{
+    font-family: 'Open Sans', sans-serif;
+}
+
 #first li{
     border-radius: 10%;
     background-color: #bfdb39;
@@ -25,7 +51,7 @@
     margin: 1%;
 }
 #first h2{
-    width: 50%;
+    width: 53%;
     margin: 2% 0 0 10%;
 }
 #second h2{
@@ -34,7 +60,9 @@
 }
 #first p, #second p {
     color: #343434;
-    width: 50%;
+    font-family: "Armata", sans-serif;
+    width: 70%;
+    font-size: .7em;
     margin: 2% 0 0 10%;
 }
 
@@ -42,8 +70,9 @@
     display: inline-block;
     padding-top: 50%;
 }
-#first li img{
-    border-radius: 10%;
+#first li .mainPic{
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
 }
 
 .mainPic{
@@ -51,9 +80,13 @@
 }
 
 .search{
-    display: none;
-    width: 10%;
+    position: absolute;
+    left: 40%;
+    top: 3em;
+    z-index: 1;
+    width: 20%;
 }
+
 #second{
     margin-top: 10%;
 }

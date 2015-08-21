@@ -1,8 +1,34 @@
+/*----------------Custom Font-------------*/
+
+/* latin-ext */
+@font-face {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Ubuntu Light'), local('Ubuntu-Light'), url(http://fonts.gstatic.com/s/ubuntu/v7/WtcvfJHWXKxx4x0kuS1koYX0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Ubuntu Light'), local('Ubuntu-Light'), url(http://fonts.gstatic.com/s/ubuntu/v7/_aijTyevf54tkVDLy-dlnJBw1xU1rKptJj_0jans920.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* latin */
+@font-face {
+    font-family: 'Droid Serif';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Droid Serif'), local('DroidSerif'), url(http://fonts.gstatic.com/s/droidserif/v6/0AKsP294HTD-nvJgucYTaIgp9Q8gbYrhqGlRav_IXfk.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
 #team{
     margin: 3em auto;
     width: 100%;
     text-align: center;
-    background-image: url("images/legion.jpg");
+    background-image: url("images/mountain.jpg");
     padding: 5% 0 8% 0;
     color: white;
 }
@@ -12,6 +38,21 @@
     display: inline-block;
     margin: 0 auto;
     width: 70%;
+}
+#team header h1{
+    font-family: "Roboto", sans-serif;
+}
+#team ul li h3{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.1em;
+    font-family: 'Droid Serif', sans-serif;
+}
+#team ul li p{
+    margin-top: 0;
+    padding-bottom: 2%;
+    font-family: sans-serif;
+    font-size: .7em;
 }
 #team ul li{
     float: left;
