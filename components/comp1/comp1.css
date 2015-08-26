@@ -68,3 +68,34 @@
     right: 10%;
     margin-top: 10%;
 }
+@keyframes tilt{
+    0% {transform: rotate(0deg)}
+    20% {transform: rotate(2deg)}
+    40% {transform: rotate(0deg)}
+    60% {transform: rotate(5deg)}
+    80% {transform: rotate(0deg)}
+    90% {transform: rotate(2deg)}
+    100% {transform: rotate(0deg)}
+}
+#searchCrit li:hover{
+    animation-name: tilt;
+    animation-duration: .5s;
+    animation-timing-function: ease;
+}
+
+/*------------------Media Query-------------------*/
+@media only screen and (max-width : 900px){
+    #searchCrit li a h1{
+        font-size: 1em;
+    }
+}
+@media only screen and (max-width : 600px){
+    #searchCrit li{
+        float: none;
+        margin: 2% 0 0 0;
+        width: 80%;
+    }
+    #searchCrit li a h1{
+        font-size: 2em;
+    }
+}

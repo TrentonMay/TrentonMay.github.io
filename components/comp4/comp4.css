@@ -68,3 +68,37 @@
 #team .border{
     border:solid white .1em;
 }
+
+@keyframes borderJump {
+    from{border-color: white; transform: translateY(0em)}
+    to{border-color: #068ec0; transform: translateY(-1em)}
+}
+#team .border:hover{
+    animation-name: borderJump;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+/*------------------Media Query-------------------*/
+@media only screen and (max-width : 900px){
+    #team ul li h3{
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+/*------------------Media Query-------------------*/
+@media only screen and (max-width : 700px){
+
+    #team ul li{
+        margin-top: 3% !important;
+        width: 38%;
+    }
+    #team ul li p{
+        display: none;
+    }
+    #team ul li h3{
+        width: 100%;
+    }
+    #team ul li:nth-child(2), #team ul li:nth-child(4){
+        margin-left: 14%;
+    }
+}

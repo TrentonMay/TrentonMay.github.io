@@ -16,7 +16,7 @@
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 #grocery{
-    width: 70%;
+    width: 80%;
     margin: 3em auto;
     display: table;
 }
@@ -43,22 +43,25 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-#first li{
+#grocery ul:nth-child(1) li{
     border-radius: 10%;
     background-color: #bfdb39;
     float: left;
     width: 22%;
     margin: 1%;
 }
-#first h2{
+#grocery ul:nth-child(1) h2{
     width: 53%;
     margin: 2% 0 0 10%;
 }
-#second h2{
+#grocery ul:nth-child(1) li:nth-child(1) h1, #grocery ul:nth-child(1) li:nth-child(3) h1{
+    width: 100%;
+}
+#grocery ul:nth-child(2) h2{
     width: 40%;
     margin: 2% 0 0 10%;
 }
-#first p, #second p {
+#grocery ul:nth-child(1) p, #grocery ul:nth-child(2) p {
     color: #343434;
     font-family: "Armata", sans-serif;
     width: 70%;
@@ -70,16 +73,16 @@
     display: inline-block;
     padding-top: 50%;
 }
-#first li .mainPic{
+#grocery ul:nth-child(1) li img:first-child{
     border-top-left-radius: 10%;
     border-top-right-radius: 10%;
 }
 
-.mainPic{
+#grocery ul li img:first-child{
     width: 100%;
 }
 
-.search{
+#grocery ul li img:nth-child(2){
     position: absolute;
     left: 40%;
     top: 3em;
@@ -87,24 +90,61 @@
     width: 20%;
 }
 
-#second{
+#grocery ul:nth-child(2){
     margin-top: 10%;
 }
-#second li{
+#grocery ul:nth-child(2) li{
     margin: 1%;
     float: left;
     width: 30%;
     border-radius: 10%;
 }
-#second li img{
+#grocery ul:nth-child(2) li img{
     border-radius: 10%;
 }
-#second li:nth-child(1){
+#grocery ul:nth-child(2) li:nth-child(1){
     background-color: #2184c5;
 }
-#second li:nth-child(2){
+#grocery ul:nth-child(2) li:nth-child(2){
     background-color: #fd7400;
 }
-#second li:nth-child(3){
+#grocery ul:nth-child(2) li:nth-child(3){
     background-color: #f0e70c;
+}
+
+@keyframes bgc2 {
+    to{background-color: #2a5db0 }
+}
+#grocery li:hover{
+    animation-name: bgc2;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+/*------------------Media Query-------------------*/
+
+@media only screen and (max-width : 1000px){
+
+    #grocery li h2{
+        font-size: 1em;
+    }
+}
+@media only screen and (max-width : 700px){
+    #grocery ul:nth-child(1) li, #grocery ul:nth-child(2) li {
+        margin: 2% auto;
+        float: none;
+        width: 70%;
+    }
+    #grocery li h2{
+        font-size: 1.3em;
+    }
+}
+@media only screen and (max-width : 600px){
+    #grocery ul:nth-child(1) li, #grocery ul:nth-child(2) li{
+        width: 80%;
+    }
+    #grocery li h2{
+        font-size: 1.3em;
+    }
 }

@@ -49,7 +49,6 @@
 }
 
 #testimonial article{
-
     width: 23.5%;
     margin: 0 0 0 2%;
     float: left;
@@ -102,4 +101,32 @@
     border-width: .5em .5em 0;
     border-color: #fff transparent;
     z-index: 1;
+}
+@keyframes borderJump{
+    from{border:solid .1em white; transform: translateY(0em)}
+    to{border: solid .1em #068ec0; transform: translateY(-1em)}
+}
+#testimonial article img:hover{
+    animation-name: borderJump;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+/*------------------Media Query-------------------*/
+@media only screen and (max-width : 750px){
+    #testimonial .speakBox p{
+        font-size: .8em;
+    }
+}
+@media only screen and (max-width : 650px){
+    #testimonial article{
+        margin: 0;
+        width: 45.6%;
+    }
+    #testimonial article:nth-child(3){
+        margin-left: 8%;
+    }
+    #testimonial article:nth-child(5){
+        margin-left: 8%;
+    }
 }

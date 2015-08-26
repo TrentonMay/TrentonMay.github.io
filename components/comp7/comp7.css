@@ -58,7 +58,6 @@
 }
 #stories #mainStory{
     float: left;
-    display: inline-block;
     width: 45%;
 }
 
@@ -88,6 +87,34 @@
 }
 #stories #secondStory article img:hover{
     opacity: 100;
+}
+/*------------------Media Query-------------------*/
+@media only screen and (max-width : 900px){
+    #stories h2{
+        font-size: .8em;
+        bottom: 2.5em;
+    }
+}
+@media only screen and (max-width : 700px){
+    #stories #mainStory{
+        width: 80%;
+        margin: 0 auto;
+        float: none;
+    }
+    #stories #secondStory{
+        width: 100%;
+        margin-top: 5%;
+    }
+    #stories #secondStory article{
+        width: 42%;
+        margin-left: 0;
+    }
+    #stories #secondStory article:nth-child(2){
+        margin-left: 15.1%;
+    }
+    #stories #secondStory article:nth-child(4){
+        margin-left: 15.1%;
+    }
 }
 
 

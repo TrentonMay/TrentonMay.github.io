@@ -34,7 +34,7 @@
 
 #welcome{
     margin: 3em auto;
-    width: 50%;
+    width: 80%;
     text-align: center;
 }
 #welcome header{
@@ -44,14 +44,14 @@
     font-family: "Armata", sans-serif;
     letter-spacing: .3em;
     font-size: 3em;
-    margin-bottom: 0;
+    margin: 0 auto;
 }
 #welcome header h2{
     font-family: 'Oswald', sans-serif;
     font-size: .9em;
     margin-top: 0;
 }
- #welcome p{
+ #welcome p:nth-child(2){
      width: 80%;
      margin: 0 auto 5% auto;
      font-family: 'Oswald',sans-serif;
@@ -64,6 +64,8 @@
      margin: 2% auto 0 auto ;
  }
 #welcome .progress{
+    width: 50%;
+    margin: 0 auto;
     color: #068ec0;
 }
 #welcome .progress p{
@@ -80,3 +82,24 @@
  #welcome  .progress progress::-webkit-progress-value{
      background: #068ec0;
  }
+
+@keyframes bgc{
+    0% {color: #999 }
+    50% {color: #068ec0}
+    100% {color: #999}
+
+}
+#welcome p:nth-child(2):hover{
+    animation-name: bgc;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+/*------------------Media Query-------------------*/
+@media only screen and (max-width : 600px){
+    #welcome header h1{
+        font-size: 2.7em;
+    }
+    #welcome .progress{
+        width: 100%;
+    }
+}

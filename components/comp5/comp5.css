@@ -47,7 +47,6 @@
     display: block;
     border: solid white .8em;
     margin: 0 auto;
-
 }
 
 #gallery #carousel button{
@@ -65,15 +64,59 @@
     color: white;
     font-size: 1.5em;
 }
-#gallery #carousel #left{
+#gallery #carousel span:hover{
+    color: orange;
+    cursor: pointer;
+}
+#gallery #carousel span:nth-child(1){
     float: left;
     position: relative;
     top: 8em;
-    left: 8em;
+    left: 10%;
 }
-#gallery #carousel #right{
+#gallery #carousel span:nth-child(2){
     float: right;
     position: relative;
     top: 8em;
-    right: 8em;
+    right: 10%;
+}
+@keyframes borderC {
+    to{border-color: orange;}
+}
+#gallery #carousel img:hover{
+    animation-name: borderC;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+}
+
+/*------------------Media Query-------------------*/
+@media only screen and (max-width : 900px){
+    #gallery header img{
+        width: 30%;
+    }
+    #gallery #carousel span:nth-child(1){
+        left: 0;
+    }
+    #gallery #carousel span:nth-child(2){
+        right: 0;
+    }
+    #gallery #carousel img{
+        width: 80%;
+        border: solid white .5em;
+    }
+    #gallery #carousel button{
+        width: 10%;
+    }
+}
+@media only screen and (max-width : 600px){
+    #gallery #carousel span:nth-child(1){
+        top: 3em;
+    }
+    #gallery #carousel span:nth-child(2){
+        top: 3em;
+    }
+    #gallery #carousel button{
+        width: 15%;
+    }
 }

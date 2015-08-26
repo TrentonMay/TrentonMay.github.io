@@ -66,7 +66,7 @@
     font-size: .8em;
     text-align: center;
 }
-#whatDo #info #lastArticle{
+#whatDo #info article:last-child{
     margin-right: 0;
 }
 #whatDo article img{
@@ -77,4 +77,42 @@
     width: 60%;
     margin: 0 auto;
     padding-bottom: 6%;
+}
+@keyframes borderRound {
+    to{border-radius: 20px}
+}
+#whatDo article button:hover{
+    animation-name: borderRound;
+    animation-duration: .5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+/*------------------Media Query-------------------*/
+@media only screen and (max-width : 900px){
+    #whatDo #info{
+        padding-bottom: 0;
+        width: 80%;
+    }
+    #whatDo article button{
+        width: 100%;
+    }
+}
+@media only screen and (max-width : 700px){
+    #whatDo article p{
+        font-size: .8em;
+    }
+    #whatDo article{
+        width: 35%;
+        margin: 0;
+    }
+    #whatDo article:nth-child(2){
+        margin-left: 30%;
+    }
+    #whatDo article:nth-child(4){
+        margin-left: 30%;
+    }
+    #whatDo article button{
+        width: 50%;
+    }
 }
