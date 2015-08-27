@@ -90,15 +90,16 @@
 
     #team ul li{
         margin-top: 3% !important;
-        width: 38%;
+        width: 37%;
+
     }
     #team ul li p{
         display: none;
     }
     #team ul li h3{
-        width: 100%;
+        width: 80%;
     }
     #team ul li:nth-child(2), #team ul li:nth-child(4){
-        margin-left: 14%;
+        margin-left: 10%;
     }
 }
