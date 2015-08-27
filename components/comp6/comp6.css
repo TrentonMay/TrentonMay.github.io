@@ -9,25 +9,25 @@ nav ul{
     float: right;
     margin: 0 19% 0 0;
     list-style: none;
+    padding: 0;
     width: 28%;
 
 }
 nav ul li{
     font-family: "Roboto", sans-serif;
+    float: left;
     font-size: .8em;
-    margin-left: 3%;
+    padding: 2%;
     display: inline-block;
 }
 
-nav #logo{
+nav img{
     margin: 0 0 0 19%;
     float: left;
-    width: 30%;
+    width: 25%;
 }
 
-nav #logo img{
-    width: 80%;
-}
+
 
 nav li a{
     text-decoration: none;
@@ -45,6 +45,21 @@ nav ul li:hover{
 
 }
 /*------------------Media Query-------------------*/
-@media only screen and (max-width : 900px){
-
+@media only screen and (max-width : 1200px){
+    nav ul{
+        width: 35%;
+        margin-right: 15%;
+    }
+}
+@media only screen and (max-width : 800px){
+    nav img{
+        width: 80%;
+        margin: 0 auto;
+        float: none;
+    }
+    nav ul{
+        width: 90%;
+        float: none;
+        margin:0 auto;
+    }
 }

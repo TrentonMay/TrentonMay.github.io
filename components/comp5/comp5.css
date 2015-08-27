@@ -91,14 +91,24 @@
 }
 
 /*------------------Media Query-------------------*/
+@media only screen and (max-width : 1200px){
+    #gallery #carousel span:nth-child(1){
+        left: -1em;
+    }
+    #gallery #carousel span:nth-child(2){
+        right: -1em;
+    }
+}
 @media only screen and (max-width : 900px){
     #gallery header img{
         width: 30%;
     }
     #gallery #carousel span:nth-child(1){
+        top: 3em;
         left: 0;
     }
     #gallery #carousel span:nth-child(2){
+        top: 3em;
         right: 0;
     }
     #gallery #carousel img{
@@ -110,12 +120,6 @@
     }
 }
 @media only screen and (max-width : 600px){
-    #gallery #carousel span:nth-child(1){
-        top: 3em;
-    }
-    #gallery #carousel span:nth-child(2){
-        top: 3em;
-    }
     #gallery #carousel button{
         width: 15%;
     }

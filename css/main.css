@@ -138,6 +138,8 @@ body{
     display: block;
     padding: .5em;
     background-color: cornflowerblue;
+    border-radius: 50px;
+    border: none;
     width: 90%;
     margin: 2% auto;
     color: azure;
